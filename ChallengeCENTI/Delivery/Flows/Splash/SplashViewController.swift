@@ -9,7 +9,7 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class SplashViewController: BaseViewController {
     
     private var presenter: SplashPresenter
     
@@ -20,5 +20,19 @@ class SplashViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        showHud()
+    }
+    
+    // Simulate show home
+    override func viewDidAppear(_ animated: Bool) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            let controller = HomeWireFrame.makeHomeView()
+            controller.modalPresentationStyle = .fullScreen
+            self.present(controller, animated: false)        }
     }
 }
