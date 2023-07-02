@@ -38,6 +38,12 @@
 		CEC6A9CE2A519E8500314BE0 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9C82A519E8500314BE0 /* SplashInteractor.swift */; };
 		CEC6A9CF2A519E8500314BE0 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC6A9C92A519E8500314BE0 /* SplashViewController.xib */; };
 		CEC6A9D02A519E8500314BE0 /* SplashWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9CA2A519E8500314BE0 /* SplashWireFrame.swift */; };
+		CEC6A9D22A51A41700314BE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9D12A51A41700314BE0 /* Constants.swift */; };
+		CEC6A9D62A51A43D00314BE0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9D52A51A43D00314BE0 /* Endpoint.swift */; };
+		CEC6A9D82A51A44F00314BE0 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9D72A51A44F00314BE0 /* Feed.swift */; };
+		CEC6A9DA2A51A48500314BE0 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9D92A51A48500314BE0 /* RequestError.swift */; };
+		CEC6A9DC2A51A49600314BE0 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9DB2A51A49600314BE0 /* RequestMethod.swift */; };
+		CEC6A9DE2A51A4A000314BE0 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9DD2A51A4A000314BE0 /* RequestProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +101,12 @@
 		CEC6A9C82A519E8500314BE0 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		CEC6A9C92A519E8500314BE0 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		CEC6A9CA2A519E8500314BE0 /* SplashWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWireFrame.swift; sourceTree = "<group>"; };
+		CEC6A9D12A51A41700314BE0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEC6A9D52A51A43D00314BE0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		CEC6A9D72A51A44F00314BE0 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		CEC6A9D92A51A48500314BE0 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		CEC6A9DB2A51A49600314BE0 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		CEC6A9DD2A51A4A000314BE0 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,8 +221,8 @@
 		CE28D49B2A518FFF008470A0 /* Infraesctructure */ = {
 			isa = PBXGroup;
 			children = (
-				CE28D4A32A5190B3008470A0 /* Networking */,
 				CE28D4A22A5190A5008470A0 /* Parameters */,
+				CE28D4A32A5190B3008470A0 /* Networking */,
 			);
 			path = Infraesctructure;
 			sourceTree = "<group>";
@@ -270,6 +282,7 @@
 		CE28D4A22A5190A5008470A0 /* Parameters */ = {
 			isa = PBXGroup;
 			children = (
+				CEC6A9D12A51A41700314BE0 /* Constants.swift */,
 			);
 			path = Parameters;
 			sourceTree = "<group>";
@@ -277,6 +290,10 @@
 		CE28D4A32A5190B3008470A0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CEC6A9D42A51A43400314BE0 /* Error */,
+				CEC6A9D32A51A42B00314BE0 /* Request */,
+				CEC6A9D52A51A43D00314BE0 /* Endpoint.swift */,
+				CEC6A9D72A51A44F00314BE0 /* Feed.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -348,6 +365,23 @@
 				CEC6A9BE2A519E7800314BE0 /* HomeWireFrame.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		CEC6A9D32A51A42B00314BE0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9DB2A51A49600314BE0 /* RequestMethod.swift */,
+				CEC6A9DD2A51A4A000314BE0 /* RequestProtocol.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CEC6A9D42A51A43400314BE0 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9D92A51A48500314BE0 /* RequestError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,22 +567,28 @@
 				CEC6A9C02A519E7800314BE0 /* HomePresenter.swift in Sources */,
 				CEC6A9CE2A519E8500314BE0 /* SplashInteractor.swift in Sources */,
 				CEC6A9B22A519AD600314BE0 /* BaseViewController.swift in Sources */,
+				CEC6A9D82A51A44F00314BE0 /* Feed.swift in Sources */,
+				CEC6A9D22A51A41700314BE0 /* Constants.swift in Sources */,
 				CE28D4B02A5192F7008470A0 /* ReusableCell.swift in Sources */,
 				CEC6A9C42A519E7800314BE0 /* HomeWireFrame.swift in Sources */,
 				CEC6A9B42A519B2800314BE0 /* Localizable.swift in Sources */,
+				CEC6A9D62A51A43D00314BE0 /* Endpoint.swift in Sources */,
 				CE28D46B2A518E41008470A0 /* AppDelegate.swift in Sources */,
 				CE28D4B22A519489008470A0 /* Error+extension.swift in Sources */,
 				CEC6A9CC2A519E8500314BE0 /* SplashPresenter.swift in Sources */,
 				CEC6A9CD2A519E8500314BE0 /* SplashViewController.swift in Sources */,
+				CEC6A9DC2A51A49600314BE0 /* RequestMethod.swift in Sources */,
 				CE28D4AC2A519164008470A0 /* UITableView+Register.swift in Sources */,
 				CEC6A9C12A519E7800314BE0 /* HomeViewController.swift in Sources */,
 				CEC6A9BF2A519E7800314BE0 /* HomeInteractorDependencies.swift in Sources */,
 				CEC6A9B62A519B3200314BE0 /* LocalizableString.swift in Sources */,
 				CE28D46D2A518E41008470A0 /* SceneDelegate.swift in Sources */,
 				CEC6A9B02A519A7400314BE0 /* AppEnvironment.swift in Sources */,
+				CEC6A9DA2A51A48500314BE0 /* RequestError.swift in Sources */,
 				CEC6A9CB2A519E8500314BE0 /* SplashInteractorDependencies.swift in Sources */,
 				CEC6A9C22A519E7800314BE0 /* HomeInteractor.swift in Sources */,
 				CEC6A9D02A519E8500314BE0 /* SplashWireFrame.swift in Sources */,
+				CEC6A9DE2A51A4A000314BE0 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
