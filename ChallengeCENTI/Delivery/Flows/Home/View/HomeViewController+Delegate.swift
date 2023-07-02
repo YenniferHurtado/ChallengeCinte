@@ -19,5 +19,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(data: item)
         return cell
     }
+}
+
+extension HomeViewController: UISearchBarDelegate {
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        navigationItem.titleView = nil
+        tableView.reloadData()
+        listedItems()
+    }
 
 }
+
