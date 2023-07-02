@@ -28,9 +28,7 @@
 		CEC6A9B82A519B4C00314BE0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC6A9B72A519B4C00314BE0 /* Localizable.strings */; };
 		CEC6A9BF2A519E7800314BE0 /* HomeInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9B92A519E7800314BE0 /* HomeInteractorDependencies.swift */; };
 		CEC6A9C02A519E7800314BE0 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9BA2A519E7800314BE0 /* HomePresenter.swift */; };
-		CEC6A9C12A519E7800314BE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9BB2A519E7800314BE0 /* HomeViewController.swift */; };
 		CEC6A9C22A519E7800314BE0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9BC2A519E7800314BE0 /* HomeInteractor.swift */; };
-		CEC6A9C32A519E7800314BE0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC6A9BD2A519E7800314BE0 /* HomeViewController.xib */; };
 		CEC6A9C42A519E7800314BE0 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9BE2A519E7800314BE0 /* HomeWireFrame.swift */; };
 		CEC6A9CB2A519E8500314BE0 /* SplashInteractorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9C52A519E8500314BE0 /* SplashInteractorDependencies.swift */; };
 		CEC6A9CC2A519E8500314BE0 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9C62A519E8500314BE0 /* SplashPresenter.swift */; };
@@ -43,6 +41,12 @@
 		CEC6A9DA2A51A48500314BE0 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9D92A51A48500314BE0 /* RequestError.swift */; };
 		CEC6A9DC2A51A49600314BE0 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9DB2A51A49600314BE0 /* RequestMethod.swift */; };
 		CEC6A9DE2A51A4A000314BE0 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9DD2A51A4A000314BE0 /* RequestProtocol.swift */; };
+		CEC6A9E02A51B50B00314BE0 /* HomeItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9DF2A51B50B00314BE0 /* HomeItemsModel.swift */; };
+		CEC6A9F12A51DFF000314BE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6A9EF2A51DFF000314BE0 /* HomeViewController.swift */; };
+		CEC6A9F22A51DFF000314BE0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC6A9F02A51DFF000314BE0 /* HomeViewController.xib */; };
+		CEDB12E62A51E2100063A359 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB12E42A51E2100063A359 /* HomeTableViewCell.swift */; };
+		CEDB12E72A51E2100063A359 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDB12E52A51E2100063A359 /* HomeTableViewCell.xib */; };
+		CEDB12E92A51E3D70063A359 /* HomeViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB12E82A51E3D70063A359 /* HomeViewController+Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,9 +94,7 @@
 		CEC6A9B72A519B4C00314BE0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CEC6A9B92A519E7800314BE0 /* HomeInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorDependencies.swift; sourceTree = "<group>"; };
 		CEC6A9BA2A519E7800314BE0 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		CEC6A9BB2A519E7800314BE0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CEC6A9BC2A519E7800314BE0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		CEC6A9BD2A519E7800314BE0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		CEC6A9BE2A519E7800314BE0 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
 		CEC6A9C52A519E8500314BE0 /* SplashInteractorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractorDependencies.swift; sourceTree = "<group>"; };
 		CEC6A9C62A519E8500314BE0 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
@@ -105,6 +107,12 @@
 		CEC6A9D92A51A48500314BE0 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		CEC6A9DB2A51A49600314BE0 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		CEC6A9DD2A51A4A000314BE0 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		CEC6A9DF2A51B50B00314BE0 /* HomeItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemsModel.swift; sourceTree = "<group>"; };
+		CEC6A9EF2A51DFF000314BE0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEC6A9F02A51DFF000314BE0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CEDB12E42A51E2100063A359 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		CEDB12E52A51E2100063A359 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		CEDB12E82A51E3D70063A359 /* HomeViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,12 +341,11 @@
 		CE28D4A92A519124008470A0 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				CEC6A9C52A519E8500314BE0 /* SplashInteractorDependencies.swift */,
-				CEC6A9C62A519E8500314BE0 /* SplashPresenter.swift */,
-				CEC6A9C72A519E8500314BE0 /* SplashViewController.swift */,
-				CEC6A9C82A519E8500314BE0 /* SplashInteractor.swift */,
-				CEC6A9C92A519E8500314BE0 /* SplashViewController.xib */,
-				CEC6A9CA2A519E8500314BE0 /* SplashWireFrame.swift */,
+				CEC6A9EA2A51DB3F00314BE0 /* Entity */,
+				CEC6A9E92A51DB3700314BE0 /* Wireframe */,
+				CEC6A9E82A51DB2E00314BE0 /* View */,
+				CEC6A9E72A51DB2700314BE0 /* Presenter */,
+				CEC6A9E62A51DB2100314BE0 /* Interactor */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -346,12 +353,11 @@
 		CE28D4AA2A51912D008470A0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CEC6A9B92A519E7800314BE0 /* HomeInteractorDependencies.swift */,
-				CEC6A9BA2A519E7800314BE0 /* HomePresenter.swift */,
-				CEC6A9BB2A519E7800314BE0 /* HomeViewController.swift */,
-				CEC6A9BC2A519E7800314BE0 /* HomeInteractor.swift */,
-				CEC6A9BD2A519E7800314BE0 /* HomeViewController.xib */,
-				CEC6A9BE2A519E7800314BE0 /* HomeWireFrame.swift */,
+				CEC6A9E52A51DB0A00314BE0 /* Entity */,
+				CEC6A9E42A51DAFE00314BE0 /* View */,
+				CEC6A9E32A51DAE500314BE0 /* WireFrame */,
+				CEC6A9E22A51DAD800314BE0 /* Presenter */,
+				CEC6A9E12A51DACC00314BE0 /* Interactor */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -371,6 +377,100 @@
 				CEC6A9D92A51A48500314BE0 /* RequestError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		CEC6A9E12A51DACC00314BE0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9B92A519E7800314BE0 /* HomeInteractorDependencies.swift */,
+				CEC6A9BC2A519E7800314BE0 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CEC6A9E22A51DAD800314BE0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9BA2A519E7800314BE0 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEC6A9E32A51DAE500314BE0 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9BE2A519E7800314BE0 /* HomeWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		CEC6A9E42A51DAFE00314BE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEDB12E32A51E1FE0063A359 /* Cells */,
+				CEC6A9EF2A51DFF000314BE0 /* HomeViewController.swift */,
+				CEC6A9F02A51DFF000314BE0 /* HomeViewController.xib */,
+				CEDB12E82A51E3D70063A359 /* HomeViewController+Delegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC6A9E52A51DB0A00314BE0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9DF2A51B50B00314BE0 /* HomeItemsModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CEC6A9E62A51DB2100314BE0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9C52A519E8500314BE0 /* SplashInteractorDependencies.swift */,
+				CEC6A9C82A519E8500314BE0 /* SplashInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CEC6A9E72A51DB2700314BE0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9C62A519E8500314BE0 /* SplashPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEC6A9E82A51DB2E00314BE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9C92A519E8500314BE0 /* SplashViewController.xib */,
+				CEC6A9C72A519E8500314BE0 /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC6A9E92A51DB3700314BE0 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6A9CA2A519E8500314BE0 /* SplashWireFrame.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CEC6A9EA2A51DB3F00314BE0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CEDB12E32A51E1FE0063A359 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEDB12E42A51E2100063A359 /* HomeTableViewCell.swift */,
+				CEDB12E52A51E2100063A359 /* HomeTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,8 +581,9 @@
 			files = (
 				CE28D4772A518E41008470A0 /* LaunchScreen.storyboard in Resources */,
 				CEC6A9CF2A519E8500314BE0 /* SplashViewController.xib in Resources */,
+				CEC6A9F22A51DFF000314BE0 /* HomeViewController.xib in Resources */,
 				CEC6A9B82A519B4C00314BE0 /* Localizable.strings in Resources */,
-				CEC6A9C32A519E7800314BE0 /* HomeViewController.xib in Resources */,
+				CEDB12E72A51E2100063A359 /* HomeTableViewCell.xib in Resources */,
 				CE28D4742A518E41008470A0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +657,7 @@
 				CEC6A9C02A519E7800314BE0 /* HomePresenter.swift in Sources */,
 				CEC6A9CE2A519E8500314BE0 /* SplashInteractor.swift in Sources */,
 				CEC6A9B22A519AD600314BE0 /* BaseViewController.swift in Sources */,
+				CEDB12E62A51E2100063A359 /* HomeTableViewCell.swift in Sources */,
 				CEC6A9D82A51A44F00314BE0 /* Feed.swift in Sources */,
 				CE28D4B02A5192F7008470A0 /* ReusableCell.swift in Sources */,
 				CEC6A9C42A519E7800314BE0 /* HomeWireFrame.swift in Sources */,
@@ -567,12 +669,14 @@
 				CEC6A9CD2A519E8500314BE0 /* SplashViewController.swift in Sources */,
 				CEC6A9DC2A51A49600314BE0 /* RequestMethod.swift in Sources */,
 				CE28D4AC2A519164008470A0 /* UITableView+Register.swift in Sources */,
-				CEC6A9C12A519E7800314BE0 /* HomeViewController.swift in Sources */,
 				CEC6A9BF2A519E7800314BE0 /* HomeInteractorDependencies.swift in Sources */,
 				CEC6A9B62A519B3200314BE0 /* LocalizableString.swift in Sources */,
+				CEC6A9F12A51DFF000314BE0 /* HomeViewController.swift in Sources */,
 				CE28D46D2A518E41008470A0 /* SceneDelegate.swift in Sources */,
 				CEC6A9B02A519A7400314BE0 /* AppEnvironment.swift in Sources */,
 				CEC6A9DA2A51A48500314BE0 /* RequestError.swift in Sources */,
+				CEDB12E92A51E3D70063A359 /* HomeViewController+Delegate.swift in Sources */,
+				CEC6A9E02A51B50B00314BE0 /* HomeItemsModel.swift in Sources */,
 				CEC6A9CB2A519E8500314BE0 /* SplashInteractorDependencies.swift in Sources */,
 				CEC6A9C22A519E7800314BE0 /* HomeInteractor.swift in Sources */,
 				CEC6A9D02A519E8500314BE0 /* SplashWireFrame.swift in Sources */,
