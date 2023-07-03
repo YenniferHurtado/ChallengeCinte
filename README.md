@@ -1,4 +1,4 @@
-# ChallengeMeli
+# ChallengeCINTE
 
 ## Description
 
