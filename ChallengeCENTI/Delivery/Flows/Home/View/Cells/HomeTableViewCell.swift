@@ -23,11 +23,7 @@ class HomeTableViewCell: UITableViewCell, ConfigurableCell {
     
     func setupUI() {
         self.titleName.numberOfLines = 0
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        print("SELECT")
+        self.selectionStyle = .none
     }
     
 }

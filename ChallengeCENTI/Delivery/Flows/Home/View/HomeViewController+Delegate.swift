@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: UITableView
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,13 +22,27 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+//MARK: UISearch
 extension HomeViewController: UISearchBarDelegate {
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         navigationItem.titleView = nil
-        tableView.reloadData()
-        listedItems()
+        configureSearchBarButton()
+        presenter.clearValues()
+        self.tableViewReload()
+        listedPosts()
     }
 
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+
+        if !searchText.isEmpty {
+            let filter = presenter.filterElements.filter({$0.title.contains(searchText)})
+            presenter.elements = filter
+            self.tableViewReload()
+        } else {
+            presenter.elements = presenter.filterElements
+            self.tableViewReload()
+        }
+    }
 }
 

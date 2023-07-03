@@ -21,6 +21,7 @@ class HomeViewController: BaseViewController {
         searchBar.showsCancelButton = true
         searchBar.becomeFirstResponder()
         searchBar.tintColor = .black
+        searchBar.placeholder = Localizable.HomeView.searchBarPlacecholder.localized
         return searchBar
     }()
     
@@ -41,7 +42,7 @@ class HomeViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        listedItems()
+        listedPosts()
     }
     
     override func viewDidLayoutSubviews() {
@@ -51,19 +52,16 @@ class HomeViewController: BaseViewController {
 
 }
 
- extension HomeViewController {
+// MARK: PRESENTER + UI
+extension HomeViewController {
     
-    func listedItems() {
+    func listedPosts() {
         showHud()
         presenter.listedPosts { [weak self] isSuccess in
             guard let self = self else { return }
-            isSuccess ? tableView.reloadData() : Alert.showEmptyAlert(on: self, handler: reloadList)
+            isSuccess ? tableViewReload() : Alert.showEmptyAlert(on: self, handler: reloadList)
             hideHud()
         }
-    }
-    
-    @objc func reloadList(_ sender: UIAlertAction) {
-        listedItems()
     }
     
     func setupUI() {
@@ -74,7 +72,18 @@ class HomeViewController: BaseViewController {
         tableView.registerNib(HomeTableViewCell.self)
     }
     
+     func tableViewReload() {
+         tableView.reloadData()
+     }
     
+    @objc func reloadList(_ sender: UIAlertAction) {
+        listedPosts()
+    }
+}
+
+// MARK: SEARCH BAR
+extension HomeViewController {
+     
     func configureSearchBarButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search,
                                                             target: self, action: #selector(showSearchBar))
