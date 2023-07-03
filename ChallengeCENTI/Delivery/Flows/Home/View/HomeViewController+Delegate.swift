@@ -35,7 +35,7 @@ extension HomeViewController: UISearchBarDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 
-        if !searchText.isEmpty {
+        if !searchText.isEmpty || searchBar.text == nil {
             let filter = presenter.filterElements.filter({$0.title.contains(searchText)})
             presenter.elements = filter
             self.tableViewReload()
