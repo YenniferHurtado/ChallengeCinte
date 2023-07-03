@@ -12,6 +12,7 @@ enum Localizable {
     enum HomeView: String, LocalizableString {
         var screen: String { "HomeView" }
         case title
+        case searchBarPlacecholder
     }
     
     enum SplashView: String, LocalizableString {

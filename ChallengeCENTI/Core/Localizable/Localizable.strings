@@ -6,4 +6,5 @@
   
 */
 
-
+"HomeView.title" = "Lista de Items";
+"HomeView.searchBarPlacecholder" = "Search Title";
